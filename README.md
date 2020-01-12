@@ -1,2 +1,2 @@
 # ProyectoReact
- Proyecto final Taller de React 2019-2
+ Proyecto final del Taller de React 2019-2

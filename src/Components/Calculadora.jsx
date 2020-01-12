@@ -40,9 +40,16 @@ export default class Calculadora extends Component {
             this.setState({resultado:'Ingrese Expresion'})
         }
         else{
-            const url = 'https://newton.now.sh/'+operacion+'/'+expresion
+            let expresion2 = expresion.replace(/\//g,"(over)")
+            const url = 'https://newton.now.sh/'+operacion+'/'+expresion2
             const resp = await axios.get(url)
-            this.setState({ resultado: resp.data.result })
+            if (operacion === 'zeroes') {
+                let x = '['+resp.data.result.toString()+']'
+                this.setState({ resultado: x})
+            }
+            else{
+                this.setState({ resultado: resp.data.result })
+            }
         }
     }
     
@@ -66,6 +73,13 @@ export default class Calculadora extends Component {
                         <option value="derive">Derivar</option>
                         <option value="integrate">Integrar</option>
                         <option value="zeroes">Soluciones</option>
+                        <option value="cos">Coseno</option>
+                        <option value="sin">Seno</option>
+                        <option value="tan">Tangente</option>
+                        <option value="arccos">Arcocoseno</option>
+                        <option value="arcsin">Arcoseno</option>
+                        <option value="arctan">Arcotangente</option>
+                        <option value="abs">Valor Absoluto</option>
                     </select>
                 </div>
                 <div>
