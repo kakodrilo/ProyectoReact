@@ -69,7 +69,7 @@ export default class Home extends Component{
                             Cómo funciona
                         </p>
                         <p>
-                            Para conocer más sobre <b>newton</b>, la API utilizada para realizar los cálculos de matemáticas avanzadas, haz clik en el botón de abajo.
+                            Para conocer más sobre <b>newton</b>, la API utilizada para realizar los cálculos de matemáticas avanzadas, haz click en el botón de abajo.
                         </p>
                         <a href="https://github.com/aunyks/newton-api">
                             <button className="boton button is-dark" ><i className="icono fas fa-paper-plane"></i>A por ello</button>
