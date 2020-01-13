@@ -27,7 +27,7 @@ function App() {
         <nav className="navbar is-dark is-fixed-top " role="navigation" aria-label="main navigation" >
           <div className="navbar-brand">
             <a href="."  className="navbar-item">
-              <h1 className="subtitle has-text-light has-text-weight-medium"><i className="logo fas fa-square-root-alt"></i> <b>Newton</b>Calculator</h1>
+              <h1 className="subtitle has-text-light has-text-weight-medium"><i className="logo fas fa-square-root-alt" style={{color:'#f03a5f'}}></i> <b>Newton</b>Calculator</h1>
             </a>
         
             <div role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onClick={show_menu}>

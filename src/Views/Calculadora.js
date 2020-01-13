@@ -15,7 +15,7 @@ export default class Calculadora extends Component{
                     <div className="column is-two-thirds-desktop is-three-quarters-tablet">
                         <div className="box">
                         <p className="title">
-                            Calculadora
+                        <i className="icono fas fa-calculator" style={{color:'#00c4a7'}}></i> Calculadora
                         </p>
                         <p>
                             Para calcular, debes seleccionar el tipo de operación que deseas y luego escribir la expresión matemática a la que le aplicarás la operación.
