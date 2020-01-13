@@ -16,6 +16,8 @@ export default class CalculadoraComponent extends Component {
         this.handleChangeExpresion = this.handleChangeExpresion.bind(this)
 
         this.handleClick = this.handleClick.bind(this)
+
+        this.loadResultado = this.loadResultado.bind(this)
     }
 
     handleChangeOperacion(e) {
