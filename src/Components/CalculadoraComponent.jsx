@@ -10,7 +10,7 @@ export default class CalculadoraComponent extends Component {
             operacion: '',
             expresion: '',
             resultado: '',
-            visible: false,
+            visible: true,
         }
         this.handleChangeOperacion = this.handleChangeOperacion.bind(this)
         this.handleChangeExpresion = this.handleChangeExpresion.bind(this)
@@ -105,7 +105,7 @@ export default class CalculadoraComponent extends Component {
                     <button onClick={this.handleClick} className="boton-calcular button is-primary" ><i className="icono fas fa-terminal"></i> Calcular</button>
                 </div>
                 <div className="field">
-                <label className="label">Selecciona la operación</label>
+                <label className="label">Resultado</label>
                     <div className="notification" style={visible_mask}>
                     {resultado}
                 </div>

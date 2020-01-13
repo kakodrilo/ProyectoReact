@@ -51,13 +51,11 @@ function App() {
       
             </div>
             <div className="navbar-end">
-              <Link to="/calculadora"className="navbar-item">
-                <div className="buttons">
-                  <button className="button is-danger">
+              <div className="navbar-item">
+                  <Link to="/calculadora" className="button is-danger">
                       <i className="icono_navbar fas fa-calculator fa-1x" ></i> Calculadora
-                  </button>
-                </div>
-              </Link>
+                  </Link>
+              </div>
             </div>
           </div>
         </nav>
